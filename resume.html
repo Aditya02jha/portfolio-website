@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/basic/resume project/Images/aditya pic.ico">
+    <!-- title -->
+    <title>Aditya Jha | Web Developer </title>
+    <link rel = "stylesheet" href="resume_style.css">
+
+    <!-- font-awsome  linking-->
+    <script src="https://kit.fontawesome.com/03d23d4b59.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+    
+        <div class="container">
+            
+        <nav id="navi">
+
+            <img src="../resume project/Images/ADITYA JHA (1).png" class="logo">
+
+            <ul id="hover">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Career</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span>Aditya</span> <br> From India </h1> 
+        </div>
+    </div>
+</header>
+<!-- -------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/basic/resume project/Images/pexels-bich-tran-669996.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('Projects')">Projects</p>
+                    </div>
+
+                    <!-- SKILLS -->
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App Interfaces </li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>App Development</span> <br> Building Android/iOS apps</li>
+
+                        </ul>
+                    </div>
+                    
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2024</span> <br> B.Tech (Infromation Technology)</li>
+                            <li><span>2019-2020</span><br> Intermission </li>
+                            <li><span>2017-2018</span> <br> Merticulation </li>
+                        </ul>
+                    </div>
+
+                    <!-- PROJECTS -->
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Blog Page</span> <br>Made a Blog Page Using HTML and CSS</li>
+                            <li><span>Portfolio Website</span><br> Portfolio Website Using HTML and CSS</li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------contact------------- -->
+    <div id="contact">
+        <div class="row">
+            <div class="row-left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                
+                <p> <i class="fa-solid fa-envelope"></i> Aditya0000jha@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9315812393</p>
+
+                <div class="social-icons">
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=100025210778538">
+                        <i class="fa-brands fa-facebook"></i></a>
+                    <!-- twitter -->
+                    <a href="" >
+                        <i class="fa-brands fa-twitter"></i></a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/aditya-jha-a742161b8/">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <!-- intagram -->
+                    <a href="" >
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <!-- github -->
+                    <a href="https://github.com/Aditya02jha" >
+                        <i class="fa-brands fa-github"></i></i></a>
+                </div>
+            </div>
+            <div class="row-right">
+                <form class="contact-form">
+                    <input id="name" placeholder="Name" type="text">
+                    <input id="email" placeholder="E-mail" type="email">
+                    <textarea id="comments" rows="6" placeholder="Comments" type="text"></textarea>
+                    
+                    <button type="submit" class="submit-butn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");   
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");   
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
